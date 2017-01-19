@@ -25,6 +25,15 @@
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/overlay.css" type="text/css">
+    <!-- Insert skills.html into index -->
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $.get("skills.html", function (data) {
+                    $("#appendToThis").append(data);
+                });
+            });
+        </script>
 </head>
 
 <body>
@@ -216,10 +225,8 @@
 
             <!-- New Skills start here -->
             <div class="mycontainer">
-                <h3>3 My new skills</h3>
-                <iframe src="http://dlsyj.github.io/skills" height="400">
-                    Alternative text for browsers that do not understand IFrames.
-                </iframe>
+                <h3>1 My new skills</h3>
+                <div id="appendToThis"></div>
             </div>
         </section>
         <!--                   Project ends                 -->

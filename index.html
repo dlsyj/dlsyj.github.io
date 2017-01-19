@@ -25,6 +25,13 @@
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/overlay.css" type="text/css">
+    <!-- Import skills.html-->
+    <script src="jquery-2.2.3.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("skills.html"); 
+    });
+    </script> 
 </head>
 
 <body>
@@ -198,6 +205,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Skills start here -->
             <div class="mycontainer">
                 <h2 class="animated" data-animate="slideInUp">My Skills</h2>
@@ -211,6 +219,11 @@
                     <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/jquery.svg" alt="jquery" width="100"> </div>
                     <div class="col-sm-4 animated" data-animate="zoomIn"> <img src="images/github.svg" alt="github" width="100"> </div>
                 </div>
+            </div>
+
+            <!-- New Skills start here -->
+            <div class="mycontainer">
+                <div id="includedContent"></div>
             </div>
         </section>
         <!--                   Project ends                 -->
